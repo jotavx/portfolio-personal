@@ -1,0 +1,33 @@
+<div class="container mt-3">
+  <small *ngIf="submitted && createUser.invalid" class="text-danger fw-bold text-uppercase">Faltan campos
+    obligatorios por completar ( * )</small>
+  <form [formGroup]="createUser">
+    <label class="form-label "><small class="fw-bold text-secondary">Foto de Perfil </small> <small
+        class="text-danger">*</small></label>
+    <input type="text" class="form-control" placeholder="Ingrese el URL" formControlName="userImage">
+    <label class="form-label mt-2 mb-2"><small class="fw-bold text-secondary">Nombre </small> <small
+        class="text-danger">*</small></label>
+    <input type="text" class="form-control" placeholder="Ingrese nombre" formControlName="userName">
+    <label class="form-label mt-2"><small class="fw-bold text-secondary">Titulo Profesional </small><small
+        class="text-danger">*</small></label>
+    <input type="text" class="form-control" placeholder="Ingrese titulo" formControlName="userTitle">
+    <label class="form-label mt-2"><small class="fw-bold text-secondary">Descripción </small><small
+        class="text-danger">*</small></label>
+    <textarea class="form-control non-resizable-textarea" rows="
+        3" placeholder="Ingrese descripción" formControlName="userDescription"></textarea>
+    <label class="form-label mt-2"><small class="fw-bold text-secondary">Repositorio </small> <small
+        class="text-danger">*</small></label>
+    <input type="text" class="form-control" placeholder="Ingrese URL" formControlName="userRepository">
+
+    <label class="form-label mt-2"><small class="fw-bold text-secondary">Imagen de Fondo </small> </label>
+    <input type="text" class="form-control" placeholder="Ingrese URL" formControlName="userBackground">
+
+    <label class="form-label mt-2"><small class="fw-bold text-secondary">URL Linkedin </small> </label>
+    <input type="text" class="form-control" placeholder="Ingrese URL" formControlName="userLinkedin">
+
+  </form>
+  <button type="submit" class="btn btn-success float-end mt-2" (click)="editFinish()"> Aceptar</button>
+  <button class="btn btn-dark float-end mx-2 mt-2" (click)="closeDialog()">Volver</button>
+
+  <br><br><br>
+</div>

@@ -1,0 +1,141 @@
+.box-container {
+  width: 90%;
+  margin: 5px auto;
+}
+
+.hero {
+  height: 80vh;
+  padding: 0 5%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(195, 209, 207, 0.773);
+  /* background-image: url("https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px 8%;
+  background-color: rgba(0, 0, 0, 0.438);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 999;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+}
+
+.active {
+  color: greenyellow !important;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.btn-ref {
+  margin-top: 12px !important;
+  color: rgb(45, 53, 44);
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid rgb(57, 221, 15);
+  background-color: rgb(57, 221, 15);
+  padding: 14px 40px !important;
+  border-radius: 50px;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-ref:hover {
+  color: rgb(255, 255, 255);
+}
+
+.first-title {
+  margin: 0;
+  margin-top: 5px;
+  color: rgba(1, 17, 3, 0.966);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: normal;
+  font-family: "Syne", sans-serif;
+}
+
+.subtitle {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: normal;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  color: rgb(72, 72, 72);
+  font-weight: 600;
+  padding: 14px 0;
+}
+
+.description {
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  color: rgb(58, 53, 53);
+  width: 50%;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .box-container {
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .hero {
+    height: 60vh;
+    background-size: cover;
+  }
+
+  .btn-ref {
+    padding: 7px 20px !important;
+    font-size: 12px;
+  }
+
+  .first-title {
+    font-size: 32px;
+    white-space: nowrap;
+    margin-top: 16px;
+  }
+
+  .description {
+    width: 80%;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-left: 25px;
+  }
+}

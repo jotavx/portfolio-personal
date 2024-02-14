@@ -1,0 +1,16 @@
+<h1 mat-dialog-title class="text-center">Iniciar Sesion</h1>
+<div mat-dialog-content>
+  <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label class="fw-bold form-label"><small>Usuario</small></label>
+      <input type="text" class="form-control" formControlName="email" autocomplete="username">
+    </div>
+    <div class="mb-3">
+      <label class="fw-bold form-label"><small>Contraseña</small></label>
+      <input type="password" class="form-control" formControlName="password" autocomplete="current-password">
+    </div>
+    <small *ngIf="loginError" class="text-danger fw-bold">Usuario o contraseña
+      incorrectos.</small>
+    <button type="submit" class="btn btn-secondary mt-3 float-end"><small>Iniciar Sesión</small></button>
+  </form>
+</div>

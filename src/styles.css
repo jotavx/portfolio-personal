@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+small,
+input,
+textarea {
+  font-size: 12px !important;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.non-resizable-textarea {
+  resize: none;
+}
+
+.no-select {
+  pointer-events: none;
+  user-select: none;
+}

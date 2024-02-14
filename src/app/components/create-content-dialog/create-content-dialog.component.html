@@ -1,0 +1,24 @@
+<div class="container mt-3">
+  <small *ngIf="submitted && createContent.invalid" class="text-danger fw-bold text-uppercase">Faltan campos
+    obligatorios por completar ( * )</small>
+  <form [formGroup]="createContent">
+    <label class="form-label mt-2 "><small class="fw-bold text-secondary">Título</small> <small
+        class="text-danger">*</small></label>
+    <input type="text" class="form-control" placeholder="Ingrese un título" formControlName="dynamicTitle">
+    <label class="form-label mt-2 "><small class="fw-bold text-secondary">Link Proyecto</small> <small
+        class="text-danger">*</small></label>
+    <input type="text" class="form-control" placeholder="Ingrese el URL " formControlName="dynamicUrl">
+    <label class="form-label mt-2 "><small class="fw-bold text-secondary">Imagen</small> <small
+        class="text-danger">*</small></label>
+    <input type="text" class="form-control" placeholder="Ingrese el URL" formControlName="dynamicImage">
+    <label class="form-label mt-2 "><small class="fw-bold text-secondary">Descripción</small> <small
+        class="text-danger">*</small></label>
+    <textarea class="form-control non-resizable-textarea" rows="
+        10" placeholder="Ingrese una Descripción" formControlName="dynamicDescription"></textarea>
+    <button type="submit" class="btn btn-success float-end mt-2" (click)="buildOrEditContent()">Aceptar</button>
+    <button class="btn btn-dark float-end mx-2 mt-2" (click)="closeDialog()">Volver</button>
+  </form>
+
+
+  <br><br><br>
+</div>
